@@ -4,33 +4,58 @@ const inquirer = require('inquirer');
 //Get data from the user for the readME.
 
 
-  inquirer
-    .prompt([
-      {
-        type: 'input',
-        message: 'What is your name?',
-        name: 'name',
-      },
-      {
-        type: 'input',
-        message: 'What is your location?',
-        name: 'location',
-      },
-      {
-        type: 'input',
-        message: 'Write a short biography about yourself.',
-        name: 'bio',
-      },
-      {
-        type: 'input',
-        message: 'What is your Linkedin address?',
-        name: 'linkedin',
-      },
-      {
-        type: 'input',
-        message: 'Now link your Github.',
-        name: 'github',
-      },
+inquirer
+.prompt([
+  {
+    type: 'input',
+    message: 'What is the title of your project?',
+    name: 'title',
+  },
+  {
+    type: 'input',
+    message: 'Give a brief description.',
+    name: 'description',
+  },
+  {
+    type: 'input',
+    message: 'Include a table of contents.',
+    name: 'toc',
+  },
+  {
+    type: 'input',
+    message: 'Are there any installation instructions?',
+    name: 'instructions',
+  },
+  {
+    type: 'input',
+    message: 'Usage?',
+    name: 'usage',
+  },
+  {
+    type: 'input',
+    message: 'Which license?',
+    name: 'license',
+  },
+  {
+    type: 'input',
+    message: 'Include an image or demo of your project.',
+    name: 'image',
+  },
+  {
+    type: 'input',
+    message: 'What should be included in the credits? (Contributions)',
+    name: 'credits',
+  },
+  {
+    type: 'input',
+    message: 'Which tests have been performed?',
+    name: 'tests',
+  },
+  {
+    type: 'input',
+    message: 'Questions?',
+    name: 'questions',
+  },
     ])
     .then((response) =>{
     console.log(response) 
