@@ -18,7 +18,7 @@ inquirer
   },
   {
     type: 'input',
-    message: 'Include a table of contents.',
+    message: 'Include a table of contents.', //Clickable navigation.
     name: 'toc',
   },
   {
@@ -33,17 +33,17 @@ inquirer
   },
   {
     type: 'input',
-    message: 'Which license?',
+    message: 'Make a license selection.', //Need a list of options and badges need to be added. 
     name: 'license',
   },
   {
     type: 'input',
-    message: 'Include an image or demo of your project.',
-    name: 'image',
+    message: 'Include an image or example of your project.',
+    name: 'example',
   },
   {
     type: 'input',
-    message: 'What should be included in the credits? (Contributions)',
+    message: 'What should be included in the credits? (Contributions)', //Github and e-mail address need to be linked.
     name: 'credits',
   },
   {
@@ -61,17 +61,17 @@ inquirer
     console.log(response) 
     //Call build function.
 
-    let buildPortfolio = buildHtml(response);
+    let buildReadme = buildReadme(response);
 
     //Writing that data to a readme.
-    fs.writeFile('index.html', buildPortfolio, (err) => 
+    fs.writeFile('README.md', buildReadme, (err) => 
     err ? console.log(err) : console.log ('Successfully created index.html!')
   );
 })
 
 //Data to be gathered. 
 
-const buildHtml = ({name, location, bio, linkedin, github}) =>
+const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>
  `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,3 +92,4 @@ const buildHtml = ({name, location, bio, linkedin, github}) =>
 </html>`
 
 
+//Video demo needs to be included. 
