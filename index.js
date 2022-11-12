@@ -33,7 +33,7 @@ inquirer
   },
   {
     type: 'list',
-    message: 'Make a license selection.', //Need a list of options and badges need to be added. 
+    message: 'Make a license selection.', 
     name: 'license',
     choices: ['None', 'MIT', 'Apache License 2.0', 'BSD' ]
   },
@@ -62,7 +62,7 @@ inquirer
     console.log(response) 
     //Call build function.
 
-    let buildReadme = buildReadme(response);
+    let buildFile = buildReadme(response);
 
     //Writing that data to a readme.
     fs.writeFile('README.md', buildReadme, (err) => 
@@ -73,42 +73,42 @@ inquirer
 //Data to be gathered. 
 
 const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>
- `#Project title
- ${title}
- #Description
+ `[#Project title](#Project-title)
+ ##${title}
+ [#Description](#Description)
  ${description}
- #Table of Contents
+ [#Table of Contents](#Table-of-Contents)
  ${toc}
- #Installation
+ [#Installation](#Installation)
  ${instructions}
- #Usage
+ [#Usage](#Usage)
  ${usage}
- #License
+ [#License](#License)
  ${license}
- #Example
- ${example}
- #Credits
+ [#Example](#Example)
+ ![alt text](${example})
+ [#Credits](#Credits)
  ${credits}
- #Tests
+ [#Tests](#Tests)
  ${tests}
- #Questions
+ [#Questions](#Questions)
  ${questions}
  `
 
 //Badges
-let licenseBadge(license) => {
-    let badge = ''
-if (license ==='MIT'){
-    badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'}
-} else if (license === 'Apache License 2.0'){
-    badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'{
-}else if (license === 'BSD'){
-    badge = '![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'
-}else {
-    badge =  ''
-}
-return badge;
-}
+// let licenseBadge(license) => {
+//     let badge = ''
+// if (license ==='MIT'){
+//     badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'}
+// } else if (license === 'Apache License 2.0'){
+//     badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'{
+// }else if (license === 'BSD'){
+//     badge = '![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'
+// }else {
+//     badge =  ''
+// }
+// return badge;
+// }
 
 
 
