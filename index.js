@@ -18,7 +18,7 @@ inquirer
   },
   {
     type: 'input',
-    message: 'Include a table of contents.', //Clickable navigation.
+    message: 'Include a table of contents.', 
     name: 'toc',
   },
   {
@@ -73,42 +73,42 @@ inquirer
 //Data to be gathered. 
 
 const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>
- `[#Project title](#Project-title)
+ `#[Project title](#Project-title)
  ##${title}
- [#Description](#Description)
+ #[Description](#Description)
  ${description}
- [#Table of Contents](#Table-of-Contents)
+ #[Table of Contents](#Table-of-Contents)
  ${toc}
- [#Installation](#Installation)
+ #[Installation](#Installation)
  ${instructions}
- [#Usage](#Usage)
+ #[Usage](#Usage)
  ${usage}
- [#License](#License)
+ #[License](#License)
  ${license}
- [#Example](#Example)
+ #[Example](#Example)
  ![alt text](${example})
- [#Credits](#Credits)
- ${credits}
- [#Tests](#Tests)
+ #[Credits](#Credits)
+ Clicking [this link](${credits}) will bring you to my Github.
+ #[Tests](#Tests)
  ${tests}
- [#Questions](#Questions)
- ${questions}
+ #[Questions](#Questions)
+ Send questions to [this e-mail](${questions}).
  `
 
 //Badges
-// let licenseBadge(license) => {
-//     let badge = ''
-// if (license ==='MIT'){
-//     badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'}
-// } else if (license === 'Apache License 2.0'){
-//     badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'{
-// }else if (license === 'BSD'){
-//     badge = '![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'
-// }else {
-//     badge =  ''
-// }
-// return badge;
-// }
+function licenseBadge(license) {
+    let badge = ''
+if (license ==='MIT'){
+    badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'}
+} else if (license === 'Apache License 2.0'){
+    badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'{
+}else if (license === 'BSD'){
+    badge = '![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'
+}else {
+    badge =  ''
+}
+return badge;
+}
 
 
 
