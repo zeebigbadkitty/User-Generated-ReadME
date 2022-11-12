@@ -32,9 +32,10 @@ inquirer
     name: 'usage',
   },
   {
-    type: 'input',
+    type: 'list',
     message: 'Make a license selection.', //Need a list of options and badges need to be added. 
     name: 'license',
+    choices: ['None', 'MIT', 'Apache License 2.0', 'BSD' ]
   },
   {
     type: 'input',
@@ -72,24 +73,43 @@ inquirer
 //Data to be gathered. 
 
 const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>
- `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<section id="name">${name}</section> 
-<section id="location">${location}</section>
-<section id="bio">${bio}</section>
-<section id="linkedin">${linkedin}</section>
-<section id="github">${github}</section>
+ `#Project title
+ ${title}
+ #Description
+ ${description}
+ #Table of Contents
+ ${toc}
+ #Installation
+ ${instructions}
+ #Usage
+ ${usage}
+ #License
+ ${license}
+ #Example
+ ${example}
+ #Credits
+ ${credits}
+ #Tests
+ ${tests}
+ #Questions
+ ${questions}
+ `
 
+//Badges
+let licenseBadge(license) => {
+    let badge = ''
+if (license ==='MIT'){
+    badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'}
+} else if (license === 'Apache License 2.0'){
+    badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'{
+}else if (license === 'BSD'){
+    badge = '![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'
+}else {
+    badge =  ''
+}
+return badge;
+}
 
-</body>
-</html>`
 
 
 //Video demo needs to be included. 
