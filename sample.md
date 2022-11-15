@@ -1,6 +1,6 @@
-## 📄project
-✏[Description](#Description)
-lots of descriptions
+## 📄User Generated README
+## ✏[Description]
+A user is prompted by questions via an application that is ran using node.js and the Inquirer package.
 
 ## 📝Table of Contents
 
@@ -11,11 +11,11 @@ lots of descriptions
 
 ## 📂Installation
 
-lots
+Node and Inquirer are required.
 
 ## ⚙Usage
 
-to do things
+Upon installing node.js and Inquirer, you can run the index.js file to generate prompts for all pertinent information to generate a README file for your application or project.
 
 ## 🔑License
 
@@ -23,17 +23,17 @@ to do things
 
 ## ▶Example
 
-https://www.prosettings.com/site/wp-content/uploads/2018/08/pro-logo.png
+https://avatars.githubusercontent.com/u/6078720?s=200&v=4
 
 ## 🏆Credits
 
- Clicking [this link](Github link) will bring you to my Github.
+ Clicking [this link](https://github.com/zeebigbadkitty/User-Generated-ReadME) will bring you to my Github.
 
 ## Tests
 
-Lots of them
+No tests were perfomed.
  
 ## ❓Questions
 
-Send questions to [this e-mail](????).
+Send questions to [this e-mail](candice.radam@gmail.com).
  

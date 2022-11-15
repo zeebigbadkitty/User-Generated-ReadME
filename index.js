@@ -18,11 +18,6 @@ inquirer
   },
   {
     type: 'input',
-    message: 'Include a table of contents.', 
-    name: 'toc',
-  },
-  {
-    type: 'input',
     message: 'Are there any installation instructions?',
     name: 'instructions',
   },
@@ -73,7 +68,7 @@ inquirer
 //Data to be gathered. 
 
 const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>`## 📄${title}
-✏[Description](#Description)
+## ✏[Description]
 ${description}
 
 ## 📝Table of Contents
@@ -97,7 +92,7 @@ ${licenseBadge(license)}
 
 ## ▶Example
 
-${example}
+[Click here for an example.](${example})
 
 ## 🏆Credits
 
