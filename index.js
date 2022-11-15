@@ -67,34 +67,34 @@ inquirer
 
 //Data to be gathered. 
 
-const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>`## 📄${title}
-## ✏Description
+const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>`## ${title} 📄
+## Description ✏
 ${description}
 
-## 📝Table of Contents
+## Table of Contents 📝
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Example](#example)
 
-## 📂Installation
+## Installation 📂
 
 ${instructions}
 
-## ⚙Usage
+## Usage ⚙
 
 ${usage}
 
-## 🔑License
+## License 🔑
 
 ${licenseBadge(license)}
 
-## ▶Example
+## Example ▶
 
 [Click here for an example.](${example})
 
-## 🏆Credits
+## Credits 🏆
 
 Clicking [this link](${credits}) will bring you to my Github.
 
@@ -102,7 +102,7 @@ Clicking [this link](${credits}) will bring you to my Github.
 
 ${tests}
  
-## ❓Questions
+## Questions ❓
 
 Send questions to [this e-mail](${questions}).
 `

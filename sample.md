@@ -1,39 +1,38 @@
-## 📄User Generated README
-## ✏[Description]
-Given prompts, the user will be guided through creating a README file for their application.
+## 📄stuff
+## ✏Description
+stuff
 
-## 📝Table of Contents
+## Table of Contents 📝
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Example](#example)
 
-## 📂Installation
+## Installation 📂
 
-Node.js and Inquirer is required.
+stuff
 
-## ⚙Usage
+## Usage ⚙
 
-Using Node.js, run index.js to start the prompts. After filling out all of the answers to the questions, a README file will be generated.
+stuff
 
-## 🔑License
+## License 🔑
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## ▶Example
+## Example ▶
 
-[Click here for an example.](Image here.)
+[Click here for an example.](stuff)
 
-## 🏆Credits
+## Credits 🏆
 
- Clicking [this link](Github here.) will bring you to my Github.
+Clicking [this link](stuff) will bring you to my Github.
 
 ## Tests
 
-No tests were performed.
+lots of tests
  
-## ❓Questions
+## Questions ❓
 
-Send questions to [this e-mail](candice.radam@gmail.com).
- 
+Send questions to [this e-mail](email).
