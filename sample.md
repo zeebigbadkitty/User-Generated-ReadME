@@ -1,6 +1,6 @@
 ## 📄User Generated README
 ## ✏[Description]
-A user is prompted by questions via an application that is ran using node.js and the Inquirer package.
+Given prompts, the user will be guided through creating a README file for their application.
 
 ## 📝Table of Contents
 
@@ -11,11 +11,11 @@ A user is prompted by questions via an application that is ran using node.js and
 
 ## 📂Installation
 
-Node and Inquirer are required.
+Node.js and Inquirer is required.
 
 ## ⚙Usage
 
-Upon installing node.js and Inquirer, you can run the index.js file to generate prompts for all pertinent information to generate a README file for your application or project.
+Using Node.js, run index.js to start the prompts. After filling out all of the answers to the questions, a README file will be generated.
 
 ## 🔑License
 
@@ -23,15 +23,15 @@ Upon installing node.js and Inquirer, you can run the index.js file to generate 
 
 ## ▶Example
 
-https://avatars.githubusercontent.com/u/6078720?s=200&v=4
+[Click here for an example.](Image here.)
 
 ## 🏆Credits
 
- Clicking [this link](https://github.com/zeebigbadkitty/User-Generated-ReadME) will bring you to my Github.
+ Clicking [this link](Github here.) will bring you to my Github.
 
 ## Tests
 
-No tests were perfomed.
+No tests were performed.
  
 ## ❓Questions
 

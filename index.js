@@ -68,7 +68,7 @@ inquirer
 //Data to be gathered. 
 
 const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>`## 📄${title}
-## ✏[Description]
+## ✏Description
 ${description}
 
 ## 📝Table of Contents
@@ -96,7 +96,7 @@ ${licenseBadge(license)}
 
 ## 🏆Credits
 
- Clicking [this link](${credits}) will bring you to my Github.
+Clicking [this link](${credits}) will bring you to my Github.
 
 ## Tests
 
@@ -105,7 +105,7 @@ ${tests}
 ## ❓Questions
 
 Send questions to [this e-mail](${questions}).
- `
+`
 
 //Badges
 function licenseBadge(license) {
