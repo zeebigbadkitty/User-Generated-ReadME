@@ -44,7 +44,7 @@ inquirer
   },
   {
     type: 'input',
-    message: 'What should be included in the credits? (Contributions)', //Github and e-mail address need to be linked.
+    message: 'Please provide a link to your Github repository.', //Github and e-mail address need to be linked.
     name: 'credits',
   },
   {
@@ -54,7 +54,7 @@ inquirer
   },
   {
     type: 'input',
-    message: 'Questions?',
+    message: 'Include your contact e-mail address.', //needs to be linked.
     name: 'questions',
   },
     ])
@@ -72,34 +72,34 @@ inquirer
 
 //Data to be gathered. 
 
-const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>`## ${title}
-[Description](#Description)
+const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>`## 📄${title}
+✏[Description](#Description)
 ${description}
 
-## Table of Contents
+## 📝Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Example](#example)
 
-## Installation
+## 📂Installation
 
 ${instructions}
 
-## Usage
+## ⚙Usage
 
 ${usage}
 
-## License
+## 🔑License
 
 ${licenseBadge(license)}
 
-## Example
+## ▶Example
 
 ${example}
 
-## Credits
+## 🏆Credits
 
  Clicking [this link](${credits}) will bring you to my Github.
 
@@ -107,7 +107,7 @@ ${example}
 
 ${tests}
  
-## Questions
+## ❓Questions
 
 Send questions to [this e-mail](${questions}).
  `
