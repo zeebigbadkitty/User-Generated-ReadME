@@ -65,43 +65,60 @@ inquirer
     let buildFile = buildReadme(response);
 
     //Writing that data to a readme.
-    fs.writeFile('README.md', buildReadme, (err) => 
-    err ? console.log(err) : console.log ('Successfully created index.html!')
+    fs.writeFile('sample.md', buildFile, (err) => 
+    err ? console.log(err) : console.log ('Successfully created readme file!')
   );
 })
 
 //Data to be gathered. 
 
-const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>
- `#[Project title](#Project-title)
- ##${title}
- #[Description](#Description)
- ${description}
- #[Table of Contents](#Table-of-Contents)
- ${toc}
- #[Installation](#Installation)
- ${instructions}
- #[Usage](#Usage)
- ${usage}
- #[License](#License)
- ${license}
- #[Example](#Example)
- ![alt text](${example})
- #[Credits](#Credits)
+const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>`## ${title}
+[Description](#Description)
+${description}
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Example](#example)
+
+## Installation
+
+${instructions}
+
+## Usage
+
+${usage}
+
+## License
+
+${licenseBadge(license)}
+
+## Example
+
+${example}
+
+## Credits
+
  Clicking [this link](${credits}) will bring you to my Github.
- #[Tests](#Tests)
- ${tests}
- #[Questions](#Questions)
- Send questions to [this e-mail](${questions}).
+
+## Tests
+
+${tests}
+ 
+## Questions
+
+Send questions to [this e-mail](${questions}).
  `
 
 //Badges
 function licenseBadge(license) {
     let badge = ''
 if (license ==='MIT'){
-    badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'}
-} else if (license === 'Apache License 2.0'){
-    badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'{
+    badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
+}else if (license === 'Apache License 2.0'){
+    badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
 }else if (license === 'BSD'){
     badge = '![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'
 }else {
