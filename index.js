@@ -67,7 +67,7 @@ inquirer
 
 //Data to be gathered. 
 
-const buildReadme = ({title, description, toc, instructions, usage, license, example, credits, tests, questions}) =>`## ${title} 📄
+const buildReadme = ({title, description, instructions, usage, license, example, credits, tests, questions}) =>`## ${title} 📄
 ## Description ✏
 ${description}
 
