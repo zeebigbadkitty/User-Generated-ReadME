@@ -1,38 +1,40 @@
-## stuf 📄
-## Description ✏
-stuf
+📄## stuff 
+✏## Description
+stuff
 
-## Table of Contents 📝
+📝## Table of Contents
+ 
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Example](#example)
 
-## Installation 📂
 
-lots of text
+📂 ## Installation
 
-## Usage ⚙
+things
 
-stuff
+⚙ ## Usage
 
-## License 🔑
+things
+
+🔑 ## License
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Example ▶
+▶ ## Example
 
 [Click here for an example.](things)
 
-## Credits 🏆
+🏆 ## Credits
 
-Clicking [this link](yay) will bring you to my Github.
+Clicking [this link](things) will bring you to my Github.
 
-## Tests
+🙏 ## Tests
 
-
+things
  
-## Questions ❓
+❓ ## Questions
 
-Send questions to [this e-mail](email).
+Send questions to [this e-mail](things).
