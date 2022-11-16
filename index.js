@@ -68,7 +68,8 @@ inquirer
 //Data to be gathered. 
 
 const buildReadme = ({title, description, instructions, usage, license, example, credits, tests, questions}) =>`## ${title} 
-✏## Description
+## Description
+
 ${description}
 
 ## Table of Contents
